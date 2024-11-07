@@ -20,6 +20,7 @@ void resetGame(int& playerLives, bool& playerIsDead) {
 }
 
 Score score;
+
 void addPointsBasedOnAlienType(const AlienType& alienType) {
     int points = 0;
     if (alienType == AlienType::OCTOPUS) {
@@ -185,8 +186,8 @@ int main() {
                     Vector2 shield1Position = shield1.getPosition();
                     float shield1BlockSize = shield1.getBlockSize();
 
-                    for (int row = 0; row < shield1Grid.size(); ++row) {
-                        for (int col = 0; col < shield1Grid[row].size(); ++col) {
+                    for (int row = 0; row < shield1Grid.size(); row++) {
+                        for (int col = 0; col < shield1Grid[row].size(); col++) {
                             if (shield1Grid[row][col] == 1) {
                                 Rectangle shieldBlock = {
                                     shield1Position.x + col * shield1BlockSize,
@@ -207,8 +208,8 @@ int main() {
                     Vector2 shield2Position = shield2.getPosition();
                     float shield2BlockSize = shield2.getBlockSize();
 
-                    for (int row = 0; row < shield2Grid.size(); ++row) {
-                        for (int col = 0; col < shield2Grid[row].size(); ++col) {
+                    for (int row = 0; row < shield2Grid.size(); row++) {
+                        for (int col = 0; col < shield2Grid[row].size(); col++) {
                             if (shield2Grid[row][col] == 1) {
                                 Rectangle shieldBlock = {
                                     shield2Position.x + col * shield2BlockSize,
@@ -229,8 +230,8 @@ int main() {
                     Vector2 shield3Position = shield3.getPosition();
                     float shield3BlockSize = shield3.getBlockSize();
 
-                    for (int row = 0; row < shield3Grid.size(); ++row) {
-                        for (int col = 0; col < shield3Grid[row].size(); ++col) {
+                    for (int row = 0; row < shield3Grid.size(); row++) {
+                        for (int col = 0; col < shield3Grid[row].size(); col++) {
                             if (shield3Grid[row][col] == 1) {
                                 Rectangle shieldBlock = {
                                     shield3Position.x + col * shield3BlockSize,
@@ -251,8 +252,8 @@ int main() {
                     Vector2 shield4Position = shield4.getPosition();
                     float shield4BlockSize = shield4.getBlockSize();
 
-                    for (int row = 0; row < shield4Grid.size(); ++row) {
-                        for (int col = 0; col < shield4Grid[row].size(); ++col) {
+                    for (int row = 0; row < shield4Grid.size(); row++) {
+                        for (int col = 0; col < shield4Grid[row].size(); col++) {
                             if (shield4Grid[row][col] == 1) {
                                 Rectangle shieldBlock = {
                                     shield4Position.x + col * shield4BlockSize,
@@ -281,8 +282,8 @@ int main() {
                     Vector2 shield1Position = shield1.getPosition();
                     float shield1BlockSize = shield1.getBlockSize();
 
-                    for (int row = 0; row < shield1Grid.size(); ++row) {
-                        for (int col = 0; col < shield1Grid[row].size(); ++col) {
+                    for (int row = 0; row < shield1Grid.size(); row++) {
+                        for (int col = 0; col < shield1Grid[row].size(); col++) {
                             if (shield1Grid[row][col] == 1) {
                                 Rectangle shieldBlock = {
                                     shield1Position.x + col * shield1BlockSize,
@@ -309,8 +310,8 @@ int main() {
                     Vector2 shield2Position = shield2.getPosition();
                     float shield2BlockSize = shield2.getBlockSize();
 
-                    for (int row = 0; row < shield2Grid.size(); ++row) {
-                        for (int col = 0; col < shield2Grid[row].size(); ++col) {
+                    for (int row = 0; row < shield2Grid.size(); row++) {
+                        for (int col = 0; col < shield2Grid[row].size(); col++) {
                             if (shield2Grid[row][col] == 1) {
                                 Rectangle shieldBlock = {
                                     shield2Position.x + col * shield2BlockSize,
@@ -336,8 +337,8 @@ int main() {
                     Vector2 shield3Position = shield3.getPosition();
                     float shield3BlockSize = shield3.getBlockSize();
 
-                    for (int row = 0; row < shield3Grid.size(); ++row) {
-                        for (int col = 0; col < shield3Grid[row].size(); ++col) {
+                    for (int row = 0; row < shield3Grid.size(); row++) {
+                        for (int col = 0; col < shield3Grid[row].size(); col++) {
                             if (shield3Grid[row][col] == 1) {
                                 Rectangle shieldBlock = {
                                     shield3Position.x + col * shield3BlockSize,
@@ -363,8 +364,8 @@ int main() {
                     Vector2 shield4Position = shield4.getPosition();
                     float shield4BlockSize = shield4.getBlockSize();
 
-                    for (int row = 0; row < shield4Grid.size(); ++row) {
-                        for (int col = 0; col < shield4Grid[row].size(); ++col) {
+                    for (int row = 0; row < shield4Grid.size(); row++) {
+                        for (int col = 0; col < shield4Grid[row].size(); col++) {
                             if (shield4Grid[row][col] == 1) {
                                 Rectangle shieldBlock = {
                                     shield4Position.x + col * shield4BlockSize,
